@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31B9C791-98BA-4038-A17D-F03BF873829D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>bagbox</RootNamespace>
+    <AssemblyName>bagbox</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="主页\xinmima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主页\xinmima.Designer.cs">
+      <DependentUpon>xinmima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="主页\yanzhengma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主页\yanzhengma.Designer.cs">
+      <DependentUpon>yanzhengma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="主页\mimazhaohui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主页\mimazhaohui.Designer.cs">
+      <DependentUpon>mimazhaohui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="前端窗口\Front_zuxiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="前端窗口\Front_zuxiao.Designer.cs">
+      <DependentUpon>Front_zuxiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="后端窗口\Backend_xiugaimima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="后端窗口\Backend_xiugaimima.Designer.cs">
+      <DependentUpon>Backend_xiugaimima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="前端窗口\Front.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="前端窗口\Front.Designer.cs">
+      <DependentUpon>Front.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类文件\DB.cs" />
+    <Compile Include="主页\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主页\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="主页\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主页\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类文件\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="主页\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主页\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="后端窗口\Backend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="后端窗口\Backend.Designer.cs">
+      <DependentUpon>Backend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="前端窗口\Front_xiugaimima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="前端窗口\Front_xiugaimima.Designer.cs">
+      <DependentUpon>Front_xiugaimima.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="主页\xinmima.resx">
+      <DependentUpon>xinmima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="主页\yanzhengma.resx">
+      <DependentUpon>yanzhengma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="前端窗口\Front_zuxiao.resx">
+      <DependentUpon>Front_zuxiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="主页\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="主页\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="主页\mimazhaohui.resx">
+      <DependentUpon>mimazhaohui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="主页\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="前端窗口\Front.resx">
+      <DependentUpon>Front.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="后端窗口\Backend.resx">
+      <DependentUpon>Backend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="前端窗口\Front_xiugaimima.resx">
+      <DependentUpon>Front_xiugaimima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="后端窗口\Backend_xiugaimima.resx">
+      <DependentUpon>Backend_xiugaimima.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
